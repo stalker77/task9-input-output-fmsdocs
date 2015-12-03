@@ -1,0 +1,48 @@
+.ui-dialog {
+  box-shadow: 0 0 20px #000;
+  border-radius: 10px;
+}
+
+.ui-widget-overlay {
+  opacity: 0;
+  background: rgba(0, 0, 0, 1);
+  transition: 1s all;
+}
+
+.ui-widget-overlay-fade {
+  opacity: 0.7;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  margin: 2px 2px 0;
+}
+
+.ui-dialog .ui-dialog-content {
+  border-left: 1px solid #bababa;
+  border-right: 1px solid #bababa;
+  margin: 0 2px 0;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+  margin-top: 0;
+  padding: 0;
+  border: 1px solid #bababa;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0 2px 2px;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.app-msgdlg-icon {
+  padding: 5px 5px 5px 0;
+}
+
+.app-msgdlg-text {
+  padding-top: 12px;
+  width: 230px;
+}

@@ -1,0 +1,193 @@
+﻿html {
+    background-color: #b6b7bc;
+    padding: 0;
+}
+
+body {
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    padding: 0px;
+    color: #696969;
+    -ms-overflow-x: hidden;
+}
+
+/*for Chrome: remove yellow frame on focused controls: */
+input:focus, select:focus, button:focus, a:focus {
+  outline: none;
+}
+
+/*for Chrome: remove blue frame on active tab jquery-ui tabs control: */
+li a.ui-tabs-anchor {
+  outline-color: transparent;
+}​
+
+a  {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #8a66af;
+}
+
+a:hover {
+    color: #aa95c3;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #9c7cbd;
+}
+
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+
+hgroup.title {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 1.3em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    filter: Shadow(Color=#505b4a, Direction=120, Strength=3);
+    text-shadow: 1px 1px 2px #505b4a;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+h4 {
+    font-size: 0.7em;
+}
+
+h5, h6 {
+    font-size: 0.6em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0px;
+}
+
+.mainBody {
+    width: 1160px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px #777;
+    height: 562px; 
+}
+
+header {
+    height: 60px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../../Images/MegaFonBG.jpg');
+    background-repeat: repeat-x;
+    background-image: -ms-linear-gradient(top, #2f934a 0%, #6aaf42 100%);
+    background-image: -o-linear-gradient(top, #2f934a 0%, #6aaf42 100%);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2f934a), to(#6AAF42));
+    background-image: -webkit-linear-gradient(bottom, #2f934a 0%, #6aaf42 100%);
+    background-image: linear-gradient(0deg, #2f934a 0%, #6aaf42 100%);
+    background-image: -moz-linear-gradient(19% 75% 90deg, #2F934A, #6AAF42);
+    width: 100%;
+}
+
+.header-padding {
+  padding-top: 10px;
+}
+
+.site-banner {
+  padding-top: 0px;
+  vertical-align: middle;
+  width: auto;
+}
+
+.site-title {
+    color: white;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-transform: none;
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-shadow: #505b4a;
+    text-shadow: 0px 0px 3px #505b4a;
+    filter: dropshadow(color=#505b4a, offx=0, offy=0);
+    filter: Shadow(Color=#505b4a, Direction=120, Strength=3);
+}
+
+.site-title a, .site-title a:hover, .site-title a:active {
+    background: none;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    filter: Shadow(Color=#505b4a, Direction=120, Strength=3);
+}
+
+#body {
+    padding: 0px 6px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+    clear: both;
+    /*padding-bottom: 35px;*/
+}
+
+.section {
+  border-radius: 5px;
+  background-color: #eeeeee;
+  padding: 0 5px 0 5px;
+  margin: 5px;
+}
+
+.float-left {
+    float: left;    
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+footer {
+    color: #4e5766;
+    padding: 10px 0px 0px 0px;
+    margin: 0 25% 0 25%; width: 50%;
+    text-align: center;
+    line-height: normal;
+    width: 50%;   
+}

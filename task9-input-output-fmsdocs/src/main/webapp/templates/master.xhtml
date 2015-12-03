@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xml:lang="en" lang="ru"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+  <h:head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8" />
+
+    <title>Продажа б/у ОС компании сотрудникам</title>
+
+    <link rel="stylesheet" href="Styles/System/jquery-ui.min.css" type="text/css"/>
+    <link rel="stylesheet" href="Styles/System/ui.jqgrid.css" type="text/css"/>
+
+    <link rel="stylesheet" href="Styles/SystemCustom/ui.jqgrid.custom.css" type="text/css"/>
+    <link rel="stylesheet" href="Styles/SystemCustom/jquery-ui.custom.css" type="text/css"/>
+
+    <link rel="stylesheet" href="Styles/Application/app.ui.core.css" type="text/css"/>
+    <link rel="stylesheet" href="Styles/Application/app.ui.menu.css" type="text/css"/>
+    <link rel="stylesheet" href="Styles/Application/app.ui.dialog.css"/>
+    <link rel="stylesheet" href="Styles/Application/app.ui.msgDialog.css"/>
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+    <script type="text/javascript" src="Scripts/System/jquery.min.js"></script>
+    <script type="text/javascript" src="Scripts/System/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="Scripts/SystemExt/jquery.jqGrid.min.js"></script>
+    <script type="text/javascript" src="Scripts/i18n/grid.locale-ru.js"></script>
+
+    <script type="text/javascript" src="Scripts/Application/app.ui.common.js"></script>
+    <script type="text/javascript" src="Scripts/Application/app.ui.msgDialog.js"></script>
+
+    <script type="text/javascript" src="Scripts/Pages/SiteMaster.js"></script>
+    <ui:insert name="headContent"/>
+
+    <style>
+      .DSE {
+        position: absolute; left: -1000px;
+      }
+    </style>
+  </h:head>
+  <h:body>
+    <div class="mainBody">
+      <form method="post" action="" id="MainForm" defaultbutton="btDisableSubmitEneter">
+        <input type="submit" name="btDisableSubmitEneter" value="" onclick="return false;" id="btDisableSubmitEneter" class="DSE"/>
+        <header>
+          <div class="float-left header-padding">
+            <div>
+              <div class="float-left site-banner">
+                <img src="Images/ks_top_header1.png" alt=""/>
+              </div>
+              <div class="float-left">
+                <p class="site-title"><a href="/">Продажа б/у ОС компании сотрудникам</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="float-right header-padding">
+            <img src="Images/ks_top_header2.png"/>
+          </div>
+          <div class="float-right">
+            <nav id="cssmenu">
+              <ul>
+                <li class='active' id="miHome"><a href='default.xhtml'><span>Домашняя</span></a></li>
+                <li style="margin: 0;"><img src="Images/MegaFonMenuSeparator.png" class='menuseparator' alt=""/></li>
+                <li id="miAdmin" style="visibility: hidden"><a href='admin.xhtml'><span>Администрирование</span></a></li>
+                <li style="margin: 0; visibility: hidden" id="miAdminSeparator"><img src="Images/MegaFonMenuSeparator.png" class='menuseparator' alt=""/></li>
+                <li id="miSubscribe"><a href="#" id="aSubscribe" >Подписаться</a></li>
+                <li style="margin: 0;"><img src="Images/MegaFonMenuSeparator.png" class='menuseparator' alt=""/></li>
+                <li class='last' id="miAbout"><a href='about.xhtml'><span>Об узле</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div id="body">
+          <ui:insert name="mainContent"/>
+          <div class="clear">
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>&#169; <h:outputText value="#{session.lastAccessedTime}"><f:convertDateTime pattern="yyyy" type="date"/></h:outputText> - ОАО МегаФон Кавказский филиал</p>
+    </footer>
+    <div id="msgDialog">
+      <div class="float-left app-msgdlg-icon">
+        <img id="imgDialogIcon" src="Images/Information.png"/>
+      </div>
+      <div class="float-left app-msgdlg-text" id="msgDialogText"/>
+    </div>
+  </h:body>
+</html>

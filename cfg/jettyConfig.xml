@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_3.dtd">
+
+<Configure id="server" class="org.eclipse.jetty.server.Server">
+  <Set name="connectors">
+    <Array type="org.eclipse.jetty.server.Connector">
+      <Item>
+        <New class="org.eclipse.jetty.server.ServerConnector">
+          <Arg><Ref refid="server"/></Arg>
+          <Set name="port">8080</Set>
+        </New>
+      </Item>
+    </Array>
+  </Set>
+
+  <Set name="handler">
+    <New class="org.eclipse.jetty.webapp.WebAppContext">
+      <Arg><SystemProperty name="webapp" default="task9-input-output-fmsdocs\src\main\webapp"/></Arg>
+      <Arg><SystemProperty name="webapp.context" default="/"/></Arg>
+    </New>
+  </Set>
+</Configure>
