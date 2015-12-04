@@ -136,17 +136,11 @@
       <version>${jerseyVersion}</version>
     </dependency>
 
-    <!--<dependency>
-      <groupId>org.glassfish.jersey.containers</groupId>
-      <artifactId>jersey-container-jetty-http</artifactId>
-      <version>${jerseyVersion}</version>
-    </dependency>
-
     <dependency>
       <groupId>org.glassfish.jersey.media</groupId>
-      <artifactId>jersey-media-json-processing</artifactId>
+      <artifactId>jersey-media-moxy</artifactId>
       <version>${jerseyVersion}</version>
-    </dependency>-->
+    </dependency>
 
     <!-- JAX-RS Jersey -->
 
