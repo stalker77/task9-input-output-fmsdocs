@@ -15,7 +15,7 @@
     <exeFileName>task9-input-output-fmsdocs</exeFileName>
     <product.company>Tander</product.company>
     <product.title>task9-input-output-fmsdocs</product.title>
-    <mainClass>ru.tander.task.</mainClass>
+    <mainClass>ru.tander.tasks.task9.Main</mainClass>
     <jdkVersion>1.7</jdkVersion>
 
     <readmeFile>README.txt</readmeFile>
@@ -46,11 +46,22 @@
 
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
+      <artifactId>spring-jdbc</artifactId>
       <version>${springVersion}</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
     <!-- Spring -->
+
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.190</version>
+    </dependency>
 
     <!-- Jetty -->
     <dependency>

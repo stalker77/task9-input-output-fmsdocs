@@ -8,5 +8,17 @@
     <property name="locations" value="file:cfg/appConfig.properties" />
   </bean>
 
+  <bean id="task9DS" class="org.h2.jdbcx.JdbcConnectionPool">
+    <constructor-arg value="${DBName}" />
+    <constructor-arg value="${DBUser}" />
+    <constructor-arg value="${DBPsw}" />
+  </bean>
 
+  <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    <constructor-arg ref="task9DS" />
+  </bean>
+
+  <bean id="userDao" class="ru.tander.tasks.task9.dao.UserDaoImpl">
+    <property name="jdbcTemplate" ref="jdbcTemplate" />
+  </bean>
 </beans>
