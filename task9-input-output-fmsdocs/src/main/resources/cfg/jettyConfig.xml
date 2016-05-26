@@ -13,20 +13,10 @@
     </Array>
   </Set>
 
-  <New id="webappContext" class="org.eclipse.jetty.webapp.WebAppContext">
-    <Arg name="webApp">webapp</Arg>
-    <Arg name="configPath">/</Arg>
-  </New>
-
   <Set name="handler">
-    <New class="org.eclipse.jetty.server.handler.HandlerCollection">
-      <Set name="handlers">
-        <Array type="org.eclipse.jetty.server.Handler">
-          <Item>
-            <Ref refid="webappContext"/>
-          </Item>
-        </Array>
-      </Set>
+    <New class="org.eclipse.jetty.webapp.WebAppContext">
+      <Arg><SystemProperty name="webapp" default="webapp"/></Arg>
+      <Arg><SystemProperty name="webapp.context" default="/"/></Arg>
     </New>
   </Set>
 </Configure>
