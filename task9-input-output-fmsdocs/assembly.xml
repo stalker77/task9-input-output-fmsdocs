@@ -33,5 +33,10 @@
         <include>${jettyConfigFile}</include>
       </includes>
     </fileSet>
+
+    <fileSet>
+      <directory>${project.basedir}/src/main/webapp</directory>
+      <outputDirectory>/webapp</outputDirectory>
+    </fileSet>
   </fileSets>
 </assembly>
