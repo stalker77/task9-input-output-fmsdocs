@@ -14,7 +14,7 @@
 
   <Set name="handler">
     <New class="org.eclipse.jetty.webapp.WebAppContext">
-      <Arg>file:task9-input-output-fmsdocs-j6/src/main/webapp</Arg>
+      <Arg>webapp</Arg>
       <Arg>/</Arg>
     </New>
   </Set>

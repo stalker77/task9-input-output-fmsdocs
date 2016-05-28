@@ -1,0 +1,11 @@
+.jcarousel-list ul {
+  padding: 6px;
+}
+
+img.CarouselImg {
+  border-radius: 5px;
+  box-shadow: 0 0 8px #222;
+  height: 68px;
+  width: 68px;
+  cursor: pointer;
+}

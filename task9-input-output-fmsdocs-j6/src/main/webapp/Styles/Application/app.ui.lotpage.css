@@ -1,0 +1,45 @@
+.app-ui-lotinfotabs {
+  height: 443px;
+  width: 437px;
+  margin: 20px 10px 0 0;
+}
+
+.app-ui-lotdescr {
+  border: solid 1px #7f7f7f;
+  background-color: #cecece;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.app-ui-lotdescrinfo {
+  height: 325px;
+  width: 377px;
+  margin: 0px;
+  background-color: #FFFFFF;
+  font: normal 12px Arial;
+  border: solid 1px #a8a8a8;
+  color: #696969;
+  padding: 4px;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+.app-ui-lototherinfo-left {
+  width: 202px;
+  text-align: right;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.app-ui-lototherinfo-right {
+  width: 165px;
+  margin-left: 10px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+#LotPhotoBig {
+  height: 640px;
+  width: 640px;
+  border-radius: 5px;
+}

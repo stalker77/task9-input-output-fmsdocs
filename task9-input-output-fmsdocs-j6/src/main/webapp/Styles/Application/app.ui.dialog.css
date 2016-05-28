@@ -1,0 +1,241 @@
+.dialogFields {
+  /*height: 300px;*/
+  overflow: auto;
+}
+
+.tabContent {
+  background-color: #efeeef;
+  background: linear-gradient(#fff, #eee);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* forms */
+.app-ui-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+}
+
+.app-ui-legend {
+  display: none;
+}
+    
+.app-ui-fieldset-list {
+  list-style: none;
+  padding: 0;
+}
+
+.app-ui-fieldset-list li {
+  padding-bottom: 5px;
+}
+
+.app-ui-label {
+  display: inline;
+  font-size: 1.2em;
+}
+
+.app-ui-roundborder {
+  border: 1px solid #999999; 
+  border-radius: 4px !important;
+  padding: 4px;
+}
+
+.app-ui-textbox,
+.app-ui-textarea,
+.app-ui-button,
+.app-ui-spinner {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;    
+}
+
+.app-ui-textbox,
+.app-ui-textarea,
+.app-ui-button {
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+.app-ui-button {
+  font-size: 1.2em;
+  height: 30px;
+  margin-right: 4px;
+  padding: 4px;
+
+  /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+  -webkit-box-shadow: inset 0 -15px 17px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 -15px 17px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -15px 17px rgba(0, 0, 0, 0.1);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s, background linear 0.2s, color linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s, background linear 0.2s, color linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s, background linear 0.2s, color linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s, background linear 0.2s, color linear 0.2s;
+}
+
+.app-ui-textbox:focus,
+.app-ui-textarea:focus,
+.app-ui-spinner-focus {
+  border: 1px solid #9c7cbd;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(156, 124, 189, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(156, 124, 189, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(156, 124, 189, 0.6);
+}
+
+.app-ui-textbox:hover,
+.app-ui-textarea:hover,
+.app-ui-imgbutton:hover,
+.app-ui-spinner:hover {
+  border: 1px solid #ba55d3;
+            
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(186, 85, 211, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(186, 85, 211, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(186, 85, 211, 0.6);
+}
+    
+.app-ui-textbox {
+  font-size: 1.2em;
+  margin: 5px 0 6px 0;
+  padding: 5px;
+  height:20px;  
+  /*width: 300px;*/
+}
+
+.app-ui-textarea {
+  font-family: inherit;  
+  height: 40px;
+  /*width: auto;*/
+}
+
+.app-ui-imgbutton {
+  border: 1px solid #999999;
+  border-radius: 4px;
+  height: 16px;
+  margin: 5px 0 6px 0;
+  padding: 5px;
+  width: 16px;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075);
+
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+input[type=radio].app-ui-radio {
+  /*display: none;*/
+  padding: 0;
+	margin: 0;
+	height: 16px;
+	width: 16px;
+	float: left;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+}
+input[type=radio].app-ui-radio + label.app-ui-radio {
+	padding-left: 23px;
+	height: 18px; 
+	display: inline-block;
+	line-height: 18px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 1.2em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+input[type=radio].app-ui-radio:hover + label.app-ui-radio:hover {
+  background-position: 0 -36px;
+}
+input[type=radio].app-ui-radio:focus + label.app-ui-radio {
+  background-position: 0 -72px;
+}
+input[type=radio].app-ui-radio:checked + label.app-ui-radio {
+	background-position: 0 -18px;
+}
+input[type=radio].app-ui-radio:hover:checked + label.app-ui-radio:hover {
+	background-position: 0 -54px;
+}
+input[type=radio].app-ui-radio:focus:checked + label.app-ui-radio {
+	background-position: 0 -90px;
+}
+label.app-ui-radio {
+	background-image:url(/Images/app-ui-radio.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input[type=checkbox].app-ui-checkbox {
+  /*display: none;*/
+  padding: 0;
+	margin: 0;
+	height: 16px;
+	width: 16px;
+	float: left;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+}
+input[type=checkbox].app-ui-checkbox + label.app-ui-checkbox {
+	padding-left: 23px;
+	height: 18px; 
+	display: inline-block;
+	line-height: 18px;
+	background-repeat: no-repeat;
+	background-position: 0 -108px;
+	font-size: 1.2em;
+	vertical-align: middle;
+	cursor: pointer;
+}
+input[type=checkbox].app-ui-checkbox:hover + label.app-ui-checkbox,
+input[type=checkbox].app-ui-checkbox + label.app-ui-checkbox:hover {
+	background-position: 0 -144px;
+}
+input[type=checkbox].app-ui-checkbox:checked + label.app-ui-checkbox {
+	background-position: 0 -126px;
+}
+input[type=checkbox].app-ui-checkbox:hover:checked + label.app-ui-checkbox,
+input[type=checkbox].app-ui-checkbox:hover:checked + label.app-ui-checkbox:hover {
+	background-position: 0 -162px;
+}
+input[type=checkbox].app-ui-checkbox:focus:checked + label.app-ui-checkbox {
+  background-position: 0 -198px;
+}
+input[type=checkbox].app-ui-checkbox:focus + label.app-ui-checkbox {
+  background-position: 0 -180px;
+}
+label.app-ui-checkbox {
+	background-image:url(/Images/app-ui-radio.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.app-ui-fakeupload {
+  position:absolute;
+  top:0;
+  right:0;
+
+  /* start of transparency styles */
+  opacity:0;
+  -moz-opacity:0;
+  filter:alpha(opacity:0);
+  /* end of transparency styles */
+
+  z-index:2; /* bring the real upload interactivity up front */
+  /*width:270px;*/
+}

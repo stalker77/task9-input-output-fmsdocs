@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="ru"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+  <h:body>
+    <ui:composition template="templates/master.xhtml">
+      <ui:define name="headContent">
+        <link rel="stylesheet" href="Styles/System/jquery.multiselect.css"/>
+        <link rel="stylesheet" href="Styles/SystemCustom/jquery.multiselect.custom.css"/>
+
+        <script type="text/javascript" src="Scripts/SystemExt/jquery.multiselect.min.js"></script>
+        <script type="text/javascript" src="Scripts/SystemExt/jquery.multiselect.ru.js"></script>
+        <script type="text/javascript" src="Scripts/Pages/Default.js"></script>
+
+        <style type="text/css">
+          .ui-jqgrid tr.ui-row-ltr td { border-bottom-color: transparent; } /*jqGrid remove horizontal grid lines*/
+          .ui-jqgrid tr.ui-row-ltr td { border-right-color: transparent; } /*jqGrid remove vertical grid lines*/
+        </style>
+      </ui:define>
+      <ui:define name="mainContent">
+        <div style="margin-top:20px;margin-left:20px;margin-right:20px;height:40px;">
+          <div style="margin-top:10px;float: left;height:30px;margin-right:10px;"><strong>Показывать</strong></div>
+          <div style="margin-top:5px;float:left;">
+            <select id="ddlLotListView" style="width: 440px;">
+              <option value="1" selected="selected">Лоты в которых Вы не являетесь участником торгов</option>
+              <option value="2">Лоты в которых Вы являетесь участником торгов</option>
+              <option value="3">Лоты по которым Вы являетесь победителем</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top:10px;">
+          <table id="jqgvLotTableData"></table>
+          <div id="jqgvLotTableDataPager"></div>
+        </div>
+      </ui:define>
+    </ui:composition>
+  </h:body>
+</html>
